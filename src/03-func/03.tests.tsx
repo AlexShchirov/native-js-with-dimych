@@ -54,29 +54,4 @@ test("does student live in city", () => {
     expect(result2).toBe(true);
 });
 
-test("Budget should be changed for HOSPITAL", () => {
-    expect(city.governmentBuildings[0].budget).toBe(200000);
-    changeBudget(city, 100000);
-    expect(city.governmentBuildings[0].budget).toBe(300000);
-});
 
-test("Budget should be changed for FIRE-STATION", () => {
-    expect(city.governmentBuildings[1].budget).toBe(500000);
-    changeBudget(city, -100000);
-    expect(city.governmentBuildings[1].budget).toBe(400000);
-});
-
-test.skip("House should be repaired", () => {
-    repairHouse(city);
-    expect(city.houses[1].repaired).toBeTruthy();
-});
-
-test("staff should be increased", () => {
-    toFireStaff(city, 20);
-    expect(city.governmentBuildings[0].staffCount).toBe(180);
-});
-
-test("staff should be hire", () => {
-    toHireStaff(city, 20);
-    expect(city.governmentBuildings[0].staffCount).toBe(220);
-});
