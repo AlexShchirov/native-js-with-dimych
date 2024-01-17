@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { splitIntoWords, sum } from './01-hello-tests/01';
+import { User } from './06-callbacks/06';
 
 
 
@@ -22,7 +23,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <User />
   </React.StrictMode>
 );
 
